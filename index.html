@@ -17,25 +17,34 @@
       <div class="container">
         <div class="account-settings__inner">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <a href="#" class="form__link">Account settings</a>
+            <header class="form__header">
+              <h2 class="form__title">Account settings</h2>
+              <a href="" class="form__close-link"><img class="form__close-icon" src="./images/close_black.svg" alt="close-icon" ></a>
+            </header>
             <div class="form__input-wrapper">
-              <label class="form__label">username
-                <input class="form__input" type="text"  name="user_name" placeholder="Enter your username" required>
-              </label>
-              <div class="form__input-names">
-                <label class="form__label">firstname
-                  <input class="form__input" type="text"  name="user_first_name" placeholder="Enter your first name" required>
-                </label>
-                <label class="form__label">lastname
-                  <input class="form__input" type="text"  name="user_last_name"placeholder="Enter your last name" required>
-                </label>
+              <img class="form__image-man" src="./images/image-man.webp" alt="image-man" width="60" height="60">
+              <div class="form__group">
+                <label class="form__label" for="user-name">username</label>
+                  <input class="form__input" type="text"  name="user_name" placeholder="Enter your username" id="user-name" required>
               </div>
-              <label class="form__label">email
-                <input class="form__input" type="email"  name="user_email" placeholder="Enter your email" required>
-              </label>
-              <label class="form__label">BIO
-                <textarea class="form__input" name="user_message" placeholder="Tell us about yourself" required></textarea>
-              </label>
+              <div class="form__input-row">
+                <div class="form__group">
+                  <label class="form__label" for="first-name">firstname</label>
+                    <input class="form__input" type="text"  name="user_first_name" placeholder="Enter your first name" id="first-name" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="last-name">lastname</label>
+                    <input class="form__input" type="text"  name="user_last_name"placeholder="Enter your last name" id="last-name" required>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">email</label>
+                  <input class="form__input" type="email"  name="user_email" placeholder="Enter your email" id="email" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="bio">BIO</label>
+                  <textarea class="form__input" name="user_message" placeholder="Tell us about yourself" id="bio" required></textarea>
+              </div>
             </div>
             <span class="form__btn-wrapper">
               <button class="form__btn" type="reset">Cancel</button>
