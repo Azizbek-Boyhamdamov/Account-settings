@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Account settings</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/normalize.css">
@@ -12,6 +12,40 @@
 </head>
 <body>
 
+  <main class="main-content">
+    <section class="account-settings">
+      <div class="container">
+        <div class="account-settings__inner">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <a href="#" class="form__link">Account settings</a>
+            <div class="form__input-wrapper">
+              <label class="form__label">username
+                <input class="form__input" type="text"  name="user_name" placeholder="Enter your username" required>
+              </label>
+              <div class="form__input-names">
+                <label class="form__label">firstname
+                  <input class="form__input" type="text"  name="user_first_name" placeholder="Enter your first name" required>
+                </label>
+                <label class="form__label">lastname
+                  <input class="form__input" type="text"  name="user_last_name"placeholder="Enter your last name" required>
+                </label>
+              </div>
+              <label class="form__label">email
+                <input class="form__input" type="email"  name="user_email" placeholder="Enter your email" required>
+              </label>
+              <label class="form__label">BIO
+                <textarea class="form__input" name="user_message" placeholder="Tell us about yourself" required></textarea>
+              </label>
+            </div>
+            <span class="form__btn-wrapper">
+              <button class="form__btn" type="reset">Cancel</button>
+              <button class="form__btn" type="submit">Save</button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <script src="./js/main.js"></script>
